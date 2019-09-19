@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import Board from './Board'
 import "./Cell.css"
 
 
@@ -23,8 +22,7 @@ class Cell extends Component {
   }
 
   handleClick(evt) {
-    // call up to the board to flip cells around this cell
-    this.props.flipCellsAroundMe();
+    this.props.flipCellsAroundMe(this.props.value);
   }
 
   render() {
