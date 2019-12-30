@@ -2,7 +2,7 @@
 
 https://lights-out.chrismartin.io
 
-Built in React
+Built in React.
 
 Online version of the game Light's Out - the objective is to turn every light off in the square. 
 
