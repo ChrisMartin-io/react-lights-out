@@ -32,8 +32,8 @@ import './Board.css';
 class Board extends Component {
 
   static defaultProps = {
-    nrows: 3,
-    ncols: 3,
+    nrows: 4,
+    ncols: 4,
     chanceLightStartsOn: .5
   }
 
@@ -53,7 +53,7 @@ class Board extends Component {
 
   createBoard() {
     // TODO: create array-of-arrays of true/false values
-    let board = [[false, false, false], [true, true, false], [false, false, false]];
+    let board = [[false, true, false], [false, false, false], [true, true, false], [false, false, false]];
     return board
   }
 
@@ -121,15 +121,7 @@ class Board extends Component {
       displayBoard = ["You won!"];
       displayBoard.toString();
     }
-    // console.log(displayBoard)
 
-    // if the game is won, just show a winning msg & render nothing else
-
-    // TODO
-
-    // make table board
-
-    // TODO
     return (
       <div>
         <table>
